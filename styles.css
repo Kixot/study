@@ -28,3 +28,20 @@ body.t-cs{--ink:#c2410c;--ink2:#ea580c;--bg:#fffaf5;--soft:#fdeee2;--line:#f3d9c
 @media(max-width:650px){.subject-switch{gap:2px}.subject-switch a{padding:3px 4px;font-size:7px;letter-spacing:0}}
 
 .hub-sat{background:#171717}
+.paper-tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.paper{background:#fff;border:1px solid var(--line);padding:30px;border-radius:3px}
+.paper-head{text-align:center;border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:10px}.paper-head .eyebrow{justify-content:center}.paper-head h2{font-size:26px;margin-bottom:8px}.paper-head p{margin:0 0 6px;font-size:12px}
+.paper-section h3{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px;margin:26px 0 6px;padding:10px 12px;background:var(--soft);border-left:3px solid var(--ink)}.paper-section h3 span{font-size:10px;color:#777}
+.paper-list{list-style:none;padding:0;margin:0}.paper-q{padding:14px 0;border-bottom:1px dashed var(--line);font-size:13px;line-height:1.7}
+.paper-q-head{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:8px;align-items:start}.paper-num{color:#777}
+.paper-options{margin:6px 0 0;padding-left:22px}.paper-options li{margin:3px 0}
+details.paper-answer{margin:10px 0 0 38px;background:var(--soft);border-left:3px solid var(--ink);padding:8px 14px;font-size:12px;line-height:1.8}
+details.paper-answer summary{cursor:pointer;font-size:11px;color:var(--ink)}details.paper-answer[open] summary{margin-bottom:8px}
+.model-answer p{margin:0 0 8px}.model-answer ul,.model-answer ol{margin:0 0 8px;padding-left:20px}
+.qa-card{background:#fff;border:1px solid var(--line);padding:18px 20px;margin-bottom:12px;border-radius:3px}.qa-card-top{display:flex;justify-content:space-between;gap:10px;margin-bottom:10px}.qa-q{font-size:13px;line-height:1.75}.qa-card details.paper-answer{margin-left:0}
+@media(max-width:650px){nav>a[data-page=papers]{font-size:0}nav>a[data-page=papers]:after{content:'Q&A';font-size:9px}.paper{padding:18px}details.paper-answer{margin-left:0}.paper-q-head{grid-template-columns:24px minmax(0,1fr) auto}}
+@media print{.sidebar,.topbar,footer,.paper-tools,.qa-section,.page-heading,.section-heading,#toast{display:none!important}.main-shell{margin:0!important;width:100%!important}main{padding:0!important}.paper{border:0;padding:0}details.paper-answer summary{display:none}body{background:#fff}}
+
+@media print{.filterbar,.qa-card details summary{display:none!important}.qa-card{break-inside:avoid}}
+
+.qa-q blockquote{margin:10px 0;padding:10px 14px;border-left:3px solid var(--ink);background:var(--soft);font-style:italic}

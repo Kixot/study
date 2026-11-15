@@ -17,7 +17,7 @@ for(const s of subjects){
 <title>${s.name} Study Desk — Class 11 CBSE</title>
 <link rel="icon" href="${icon}">
 <link rel="stylesheet" href="styles.css">
-${s.files.map(f=>`<script src="data/${f}" defer></script>`).join('')}<script src="app.js" defer></script>
+${[...s.files,s.id+'-qa.js'].map(f=>`<script src="data/${f}" defer></script>`).join('')}<script src="app.js" defer></script>
 </head>
 <body class="${s.theme}">
 <div class="app-shell">
@@ -27,6 +27,7 @@ ${s.files.map(f=>`<script src="data/${f}" defer></script>`).join('')}<script src
 <nav aria-label="Main navigation">
 <a href="#dashboard" data-page="dashboard"><span class="nav-icon">▦</span>Overview<span class="nav-arrow">↗</span></a>
 <a href="#practice" data-page="practice"><span class="nav-icon">▤</span>Practice exercises</a>
+<a href="#papers" data-page="papers"><span class="nav-icon">✎</span>Questions & answers</a>
 <a href="#theory" data-page="theory"><span class="nav-icon">▱</span>Theory & tricks</a>
 <a href="#library" data-page="library"><span class="nav-icon">⇩</span>NCERT library</a>
 <a href="#mistakes" data-page="mistakes"><span class="nav-icon">↺</span>My mistakes<span id="mistake-count" class="nav-count">0</span></a>
