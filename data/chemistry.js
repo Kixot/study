@@ -1,0 +1,11 @@
+window.DESK={id:'chemistry',name:'Chemistry',
+units:[['phys','Physical Chemistry','n','Moles, atoms, energy, equilibrium and redox.'],['inorg','Inorganic Chemistry','⌬','Periodic trends and chemical bonding.'],['org','Organic Chemistry','C–H','Basic principles, isomerism and hydrocarbons.']],
+sourceNote:'Original questions written in the NCERT exercise, NCERT exemplar and CBSE exam patterns (MCQ, assertion–reason, numerical). Atomic masses: H 1, C 12, N 14, O 16, Na 23, Cl 35.5, Ca 40.',
+library:{books:[{code:'kech1',short:'Part I',icon:'I',title:'Chemistry Part I',chapters:['c1','c2','c3','c4','c5','c6']},{code:'kech2',short:'Part II',icon:'II',title:'Chemistry Part II',chapters:['c7','c8','c9']}]},
+strategy:{intro:'Chemistry papers mix quick recall with careful numericals. Fast, accurate recall of facts and exceptions frees time for the calculations.',
+ideas:['Learn the exceptions as a list: Cr and Cu configurations, N vs O ionisation enthalpy, Cl vs F electron gain enthalpy, O₂ paramagnetism.','For every numerical, convert to moles first. Moles connect mass, volume, particles and concentration.','Balance equations before using any mole ratio.','Write equilibrium expressions without pure solids and liquids.','In organic chemistry, number the main chain from the end that gives the lowest locants, and name substituents alphabetically.','For assertion–reason, judge A and R separately, then ask whether R explains A.'],
+formulas:['n = m/M = N/N_A = V/22.4 L (STP, school convention)','pH = −log[H⁺]; pH + pOH = 14 at 25°C','ΔG = ΔH − TΔS; ΔH = ΔU + Δn_gRT','Bond order = ½(N_b − N_a)'],
+trap:'Units decide marks: molarity uses litres of solution, molality uses kg of solvent, and R must match the units of P and V.',
+shortcut:'Draw the structure before naming any organic compound. Most naming errors come from picking the wrong longest chain.',
+exam:'Mole-concept numericals, electronic configurations and quantum numbers, VSEPR shapes, MOT bond order, Hess’s law, Kc/Kp and pH, balancing redox equations, IUPAC names and reaction products of hydrocarbons.'},
+chapters:[]};

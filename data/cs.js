@@ -1,0 +1,13 @@
+window.DESK={id:'cs',name:'Computer Science',exactIntegers:true,
+units:[['sys','Computer Systems','⌨','Hardware, software, number systems, Boolean logic and emerging trends.'],['prog','Python Programming','>_','Problem solving and Python from basics to dictionaries.'],['soc','Society, Law and Ethics','⚖','Digital footprints, cyber safety, IPR and the IT Act.']],
+sourceNote:'Original questions written in the NCERT exercise and CBSE exam patterns (MCQ, assertion–reason, output-based, numerical). All Python is Python 3.',
+practiceLine:'Every NCERT chapter of Class 11 Computer Science, plus Boolean logic from the CBSE syllabus',
+formulaLabel:'Syntax & key facts',
+library:{books:[{code:'kecs1',short:'Textbook',icon:'CS',title:'Computer Science',chapters:['k1','k2','k3','k4','k5','k6','k7','k8','k9','k10','k11']}]},
+strategy:{intro:'CS papers mix theory, output questions and short programs. Output questions are the easiest marks to lose by rushing.',
+ideas:['For output questions, trace the code line by line on paper. Write each variable’s value as it changes.','Watch the details: / vs //, = vs ==, indentation, and whether a method changes the object or returns a new one.','Strings and tuples are immutable; lists and dictionaries are mutable.','In number conversions, show the working (repeated division or place values). Steps carry marks.','For theory, learn the definition plus one example: “Phishing: a fake email or site that tricks users into giving passwords.”','Write programs with meaningful variable names, input/output prompts and correct indentation.'],
+formulas:['/ gives float; // floor division; % remainder; ** power','range(start, stop, step) stops before stop','String index: first is 0, last is −1','Mutable: list, dict · Immutable: int, float, str, tuple','1 byte = 8 bits; 1 KB = 1024 bytes'],
+trap:'list.sort() returns None; it changes the list itself. Writing x = x.sort() loses your list.',
+shortcut:'For loop output questions, make a small table: iteration number | variable values | printed output.',
+exam:'Output-finding questions, error spotting, short Python programs, number system conversions, Boolean expressions, and societal-impact definitions.'},
+chapters:[]};

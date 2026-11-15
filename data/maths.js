@@ -1,0 +1,11 @@
+window.DESK={id:'maths',name:'Maths',
+units:[['sets','Sets & Functions','{ }','Sets, relations, functions and trigonometry.'],['alg','Algebra','x²','Complex numbers, inequalities, counting, binomial, sequences.'],['coord','Coordinate Geometry','(x,y)','Lines, conics and an introduction to 3D.'],['calc','Calculus','dy/dx','Limits and derivatives.'],['stat','Statistics & Probability','σ','Dispersion and probability.']],
+sourceNote:'Original questions written in the NCERT exercise, RD Sharma and CBSE exam patterns (MCQ, assertion–reason, numerical). Numerical answers must be exact unless a question asks for decimals.',
+library:{books:[{code:'kemh1',short:'Textbook',icon:'∑',title:'Mathematics',chapters:['m1','m2','m3','m4','m5','m6','m7','m8','m9','m10','m11','m12','m13','m14']}]},
+strategy:{intro:'Maths papers reward clean working. Most lost marks come from skipped steps, sign slips and not checking the answer against the question.',
+ideas:['Write the formula you are using before substituting. Step marks are given even when the final answer slips.','For “find the value” questions, check your answer in the original expression.','In trigonometry, note the quadrant first; it decides every sign.','In P&C, first decide: does order matter (permutation) or not (combination)?','For coordinate geometry, sketch a rough figure; it catches wrong signs and impossible answers.','Leave the last 15 minutes to recheck the long-answer questions.'],
+formulas:['ⁿPᵣ = n!/(n − r)!; ⁿCᵣ = n!/(r!(n − r)!)','Tᵣ₊₁ = ⁿCᵣ aⁿ⁻ʳ bʳ','Slope m = (y₂ − y₁)/(x₂ − x₁)','d/dx(xⁿ) = nxⁿ⁻¹'],
+trap:'Do not divide both sides of an inequality or equation by an expression that could be zero or negative without checking.',
+shortcut:'Substitute simple values (x = 0, 1, −1) to test an identity or eliminate MCQ options quickly.',
+exam:'Proofs of trig identities, P&C word problems, binomial general term, AP/GP sums, equations of lines and conics, limits and first-principle derivatives, variance and probability.'},
+chapters:[]};

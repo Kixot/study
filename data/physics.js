@@ -1,0 +1,11 @@
+window.DESK={id:'physics',name:'Physics',
+units:[['mech','Mechanics','F⃗','Motion, forces, energy, rotation and gravity.'],['matter','Properties of Matter','ρ','Solids, fluids and heat.'],['heat','Thermodynamics & Gases','Δ','Laws of thermodynamics and kinetic theory.'],['waves','Oscillations & Waves','∿','SHM, sound and travelling waves.']],
+sourceNote:'Original questions written in the NCERT exercise, NCERT exemplar and CBSE exam patterns (MCQ, assertion–reason, numerical). Take g = 9.8 m/s² unless a question says otherwise.',
+library:{books:[{code:'keph1',short:'Part I',icon:'I',title:'Physics Part I',chapters:['p1','p2','p3','p4','p5','p6','p7']},{code:'keph2',short:'Part II',icon:'II',title:'Physics Part II',chapters:['p8','p9','p10','p11','p12','p13','p14']}]},
+strategy:{intro:'Physics papers reward a calm routine more than speed. Most lost marks come from units, signs and skipped steps, not from not knowing the topic.',
+ideas:['Read the question twice: underline what is given and box what is asked.','Write the formula first, then substitute with units. Examiners give step marks.','Convert everything to SI before substituting (cm → m, g → kg, km/h → m/s by × 5/18).','Draw a free-body diagram or a sketch for every mechanics problem, even a rough one.','For assertion–reason, judge A and R separately first; only then ask whether R explains A.','Leave 10 minutes to check units, powers of ten and significant figures.'],
+formulas:['km/h → m/s: multiply by 5/18','1 eV = 1.6 × 10⁻¹⁹ J','g ≈ 9.8 m/s² (use 10 only if told)','Answer to the least number of significant figures in the data'],
+trap:'Do not jump into numbers before deciding the physics. A quick estimate (is the answer about 10 or 10,000?) catches most slips.',
+shortcut:'Dimensional check: if your final expression does not have the right dimensions, it is wrong, no matter how neat the algebra looks.',
+exam:'Derivations (equations of motion, escape speed, Bernoulli, work done in an isothermal process, speed of a wave), numericals on work–energy and SHM, and concept-based assertion–reason.'},
+chapters:[]};
