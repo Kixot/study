@@ -2,7 +2,9 @@
 
 The SAT Study Desk design, rebuilt for CBSE Class 11 Physics (blue), Chemistry (green), Maths (purple), English (red) and Computer Science (orange). Each subject has its own page.
 
-Open `index.html` directly, or run `node server.mjs` and go to http://127.0.0.1:4174.
+Live site: https://kixot.github.io/study/
+
+Open `index.html` directly, or run `node server.mjs` and go to http://127.0.0.1:4174. When opened locally and online, each subject page loads the newest questions, theory and app code from the live site, so the local copy is always up to date; offline, it uses the files in this folder.
 
 ## Content
 - Every NCERT chapter (rationalised syllabus): Physics 14, Chemistry 9, Maths 14, Computer Science 11 + Boolean logic.

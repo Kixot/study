@@ -17,7 +17,7 @@ for(const s of subjects){
 <title>${s.name} Study Desk — Class 11 CBSE</title>
 <link rel="icon" href="${icon}">
 <link rel="stylesheet" href="styles.css">
-${[...s.files,s.id+'-qa.js'].map(f=>`<script src="data/${f}" defer></script>`).join('')}<script src="app.js" defer></script>
+
 </head>
 <body class="${s.theme}">
 <div class="app-shell">
@@ -39,6 +39,25 @@ ${[...s.files,s.id+'-qa.js'].map(f=>`<script src="data/${f}" defer></script>`).j
 <main id="main" tabindex="-1"><div class="loading"><span class="spinner"></span>Opening your study desk…</div></main>
 <footer><span>BUILT FOR SMALL STEPS & BIG GOALS.</span><span>Independent study tool. Not affiliated with NCERT or CBSE.</span></footer>
 </div></div><div id="toast" role="status" aria-live="polite"></div>
+<script>
+/* Loads the newest questions and app from the live site when opened locally; falls back to the files in this folder when offline. */
+(function(){
+ var LIVE='https://kixot.github.io/study/';
+ var local=location.protocol==='file:'||/^(localhost|127.0.0.1|[::1])$/.test(location.hostname);
+ var files=${JSON.stringify([...s.files.map(f=>'data/'+f),'data/'+s.id+'-qa.js','app.js'])};
+ var v='?v='+Date.now();
+ function run(i,fromLive){
+  if(i>=files.length)return;
+  var el=document.createElement('script');
+  el.src=(fromLive?LIVE:'')+files[i]+v;
+  el.onload=function(){run(i+1,fromLive)};
+  el.onerror=function(){if(fromLive){window.DESK=undefined;run(0,false)}else{document.getElementById('main').innerHTML='<div class="error-box"><h2>The study desk couldn’t open.</h2><p>Keep all files of the folder together and refresh.</p></div>'}};
+  document.body.appendChild(el);
+ }
+ if(local){var css=document.createElement('link');css.rel='stylesheet';css.href=LIVE+'styles.css'+v;document.head.appendChild(css)}
+ run(0,local);
+})();
+</script>
 </body></html>
 `)}
 console.log('pages written');
